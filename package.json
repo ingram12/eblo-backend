@@ -1,0 +1,68 @@
+{
+  "name": "eblo",
+  "version": "1.0.0",
+  "description": "smart dictionary",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "npm run build && node dist/server",
+    "test": "jest",
+    "babel-node": "babel-node",
+    "flow": "flow",
+    "flow-typed": "flow-typed",
+    "gulp": "gulp",
+    "eslint": "eslint",
+    "build": "babel src --out-dir dist",
+    "prepublishOnly": "npm run build",
+    "babel": "babel",
+    "dev": "nodemon src/server.js --exec \"node -r dotenv/config -r babel-register\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingram12/eblo-backend.git"
+  },
+  "author": "ingram <ingram_it@bk.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingram12/eblo-backend/issues"
+  },
+  "homepage": "https://github.com/ingram12/eblo-backend#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.13.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.3.5",
+    "express": "^4.13.0",
+    "express-session": "^1.11.3",
+    "morgan": "^1.6.0",
+    "mysql": "^2.7.0",
+    "passport": "^0.2.2",
+    "passport-local": "^1.0.0",
+    "gulp": "*"
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-jest": "*",
+    "babel-plugin-transform-runtime": "*",
+    "babel-preset-env": "*",
+    "babel-preset-flow": "*",
+    "babel-preset-stage-0": "*",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "debug": "*",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-flowtype": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jest": "*",
+    "flow-bin": "^0.57",
+    "flow-typed": "*",
+    "jest": "^21",
+    "jest-cli": "*",
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.12.1"
+  }
+}
